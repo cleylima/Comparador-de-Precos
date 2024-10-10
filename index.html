@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+    <title>Preço Certo</title>
+</head>
+
+<body>
+    <main class="container">
+        <h1>PreçoCerto.com</h1>
+        <form class="search_form">
+            <input placeholder="Digite o nome do produto" type="text" class="product_input">
+            <button type="submit">Buscar</button>
+        </form>
+        <div class="product_list"></div>
+        <canvas class="price_chart" id="priceChart"></canvas>
+    </main>
+</body>
+<script src="scrpts.js"></script>
+
+</html>

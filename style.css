@@ -1,0 +1,117 @@
+:root{
+    --primary-color: #3498db;
+    --secundant-color: #2ecc71;
+    --background-color: #ecf0f1;
+    --text-color: #34495e;
+    --card-background: #ffffff;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background: var(--background-color);
+    color: var(--text-color);
+    padding: 20px;
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1{
+    text-align: center;
+    color: var(--primary-color);
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+form{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+form .product_input{
+    flex-grow: 1;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid var(--primary-color);
+    border-radius: 25px;
+    outline: none;
+}
+
+form .product_input:focus{
+    box-shadow: 0 0 5px var(--primary-color);
+
+}
+
+form button{
+    padding: 12px 25px;
+    background: var(--primary-color);
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: var(--background-color);
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+form button:hover{
+    background: #2980b9;
+}
+
+.product_list{
+   display: grid;
+   gap: 25px;
+   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   margin-bottom: 30PX;
+}
+
+.product_card{
+    background: var(--card-background);
+    border-radius: 10px;
+    box-shadow: 0 4px 6px var(--shadow-color);
+    text-align: center;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.product_card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px var(--shadow-color);
+}
+
+.product_card img{
+    max-width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product_card h3{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+
+.product_card .product_store{
+    color: var(--text-color);
+    margin-bottom: 5px;
+}
+
+.product_card .product_price{
+    color: var(--secundant-color);
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
